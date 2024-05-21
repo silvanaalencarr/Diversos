@@ -132,4 +132,73 @@ $z=$x . $y .$o;
 echo"<br>";
 echo $z;
 
-
+<--*Caracteres de escape*--> 
+//\' Single Quote 
+//\" Double Quote 
+//\$ PHP Variables
+//\n New Line
+//\r Carriage Return
+//\t Tab
+//\f Form Feed
+//\ooo  Octal value
+//\xhh  Hex value
+<?PHP
+$x="Somos os chamados \"Vikings\" do norte";
+echo $x;
+?>
+<?PHP
+$a=5;
+$b=5.34;
+$c="25";
+$y=1.9e411;
+var_dump($a);
+echo "<br>";
+var_dump($b);
+echo "<br>";
+var_dump($c);
+echo "<br>";
+var_dump($y);
+echo "<br>";
+?>
+<?PHP
+//verifique se o tipo de uma
+//variavel e inteiro
+$x=5985;
+var_dump(is_int($x));
+echo "<br>";
+//verificar novamente
+$x=3.14;
+var_dump(is_float($x));
+echo "<br>";
+$x=10.123;
+var_dump(is_infinite($x));
+echo "<br>";
+$y=1.9e411;
+echo "<br>";
+var_dump(is_int($x));
+echo "<br>";
+?>
+<?PHP
+echo "<br>";
+$x=25.232;
+var_dump(is_string($x));
+echo "<br>";
+$x=5489;
+var_dump(is_string($x));
+echo "<br>";
+$x=12.5e896;
+var_dump(is_string($x));
+echo "<br>";
+$x="meu teste";
+var_dump(is_string($x));
+echo "<br>";
+?>
+<?php 
+//converter float para inteiro
+echo "<br>";
+$x=120450.75;
+$int_cast=(int)$x;
+echo $int_cast;
+echo "<br>";
+echo "<br>";
+?>
